@@ -1,13 +1,25 @@
+/* IMPORT FONTS  */
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600&family=Frank+Ruhl+Libre:wght@700;800;900&display=swap");
+
+/* Restet margins */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .wrapper {
+  margin: 0 auto;
   max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: minmax(3rem, auto);
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 
 .wrapper > * {
-  background-color: aqua;
+  border: 1px solid black;
 }
 
 .grid-span-2-col {
@@ -18,9 +30,98 @@
   grid-column: span 3;
 }
 
+h1 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-family: "Frank Ruhl Libre", serif;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+p,
+li {
+  font-family: "Fira Sans", sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.875;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.yellow-bg {
+  background-color: #ffb939;
+}
+
+.orange-bg {
+  background-color: #f17949;
+}
+
+.light-gray {
+  background-color: #a9a19e;
+}
+
 header {
   grid-row: 1/3;
   grid-column: 1/4;
+
+  background-color: #c7ddea;
+  background-image: url("./img/family.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 96% bottom;
+  background-size: 17rem;
+
+  height: 34rem;
+  padding: 4rem 6rem;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+aside p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+button {
+  margin: 4rem 0;
+  padding: 1rem 2.8rem;
+  border-radius: 30px;
+  border: 0;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+article {
+  background-color: #a9a19e;
+  padding: 7rem 5rem 0 6rem;
+}
+
+article.sell {
+  background-color: #a9a19e;
+  padding: 7rem 5rem 0 6rem;
+  height: 34rem;
+}
+
+article.about {
+  /* background-color: #a9a19e; */
+  padding: 7rem 5rem 0 6rem;
+  height: 38rem;
 }
 
 .learn-more {
@@ -44,4 +145,49 @@ header {
 .dark-gray {
   background-color: #777574;
   height: 10rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 4rem;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  list-style-type: none;
+}
+
+nav > ul > li {
+  font-size: 0.75rem;
+  margin: 0 3.5rem;
+}
+
+li.chosen {
+  color: #000;
+}
+
+.grid-card-btm-bg {
+  grid-row: 6/7;
+}
+
+.grid-card-top-bg {
+  grid-row: 5/6;
+}
+.card-container {
+  grid-row: 5/7;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container > * {
+  width: 9rem;
+  height: 12rem;
+  background-color: aqua;
 }
