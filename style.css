@@ -1,5 +1,7 @@
-/* IMPORT FONTS  */
+/*IMPORT ICONS*/
+@import url("https://unpkg.com/css.gg@2.0.0/icons/css/chevron-up.css");
 
+/* IMPORT FONTS  */
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600&family=Frank+Ruhl+Libre:wght@700;800;900&display=swap");
 
 /* Restet margins */
@@ -71,6 +73,22 @@ li {
 
 .yellow-bg {
   background-color: #ffb939;
+}
+
+/*styling and positioning for h1 "about us" tag in yellow middle part of page*/
+.yellow-bg h1 {
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  top: -1.5rem;
+}
+
+/*styling and positioning for p tag(under about us) in yellow middle part of page*/
+.yellow-bg p {
+  text-align: center;
+  width: 62%;
+  margin: 1rem auto;
+  line-height: 1.5;
 }
 
 .orange-bg {
@@ -150,13 +168,131 @@ article.about {
   grid-column: 1/-1;
 }
 
-.square-box {
-  aspect-ratio: 1/1;
-}
-
 .dark-gray {
   background-color: #777574;
   height: 10rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 4rem;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  list-style-type: none;
+}
+
+nav > ul > li {
+  font-size: 0.75rem;
+  margin: 0 3.5rem;
+}
+
+li.chosen {
+  color: #000;
+}
+
+.grid-card-btm-bg {
+  grid-row: 6/7;
+}
+
+.grid-card-top-bg {
+  grid-row: 5/6;
+}
+.card-container {
+  grid-row: 5/7;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container > * {
+  width: 9rem;
+  height: 12rem;
+  background-color: aqua;
+}
+
+/*Positioning for 6 grid box items under main part*/
+.square-box {
+  aspect-ratio: 1/1;
+  display: grid;
+}
+
+/*Styling for h1 tag in first box of the 6 boxes*/
+.square-box h1 {
+  font-family: "Frank Ruhl Libre", serif;
+  text-align: center;
+  margin: auto;
+  line-height: 1;
+  font-size: 45px;
+}
+
+/*Styling and positioning for <p> text inside the boxes*/
+.text {
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 17px;
+}
+
+/*Styling and positioning for <p> numbers inside the boxes*/
+.number {
+  font-family: "Frank Ruhl Libre", serif;
+  color: rgba(0, 0, 0, 0.4);
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-size: 35px;
+  height: 0rem;
+}
+
+/*Setting color for all the boxes*/
+.sq-box-style {
+  background-color: #c7ddea;
+}
+
+.sq-box1-style {
+  background-color: #ffffff;
+}
+
+.sq-box2-style {
+  background-color: #ebebeb;
+}
+
+.sq-box4-style {
+  background-color: #f17949;
+}
+
+/*Styling for the footer and positiong for items inside*/
+footer {
+  background: #a9a19e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+/*Styling for the footer text*/
+footer p {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 17px;
+  padding: 0 0 0.5rem 0;
+  margin-top: -0.5rem;
+}
+
+/*Up arrow style*/
+.gg-chevron-up::after {
+  width: 15px;
+  height: 15px;
+}
+
+/*Dark grey spot in footer*/
+.dark-gray {
+  width: 100%;
 }
 
 nav {
