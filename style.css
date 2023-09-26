@@ -20,9 +20,9 @@
   /* gap: 1rem; */
 }
 
-.wrapper > * {
+/* .wrapper > * {
   border: 1px solid black;
-}
+} */
 
 .grid-span-2-col {
   grid-column: span 2;
