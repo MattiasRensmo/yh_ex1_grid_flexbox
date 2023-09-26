@@ -45,17 +45,28 @@ h2 {
   font-weight: 900;
 }
 
+h4 {
+  font-family: "Frank Ruhl Libre", serif;
+
+  font-size: 1rem;
+  font-weight: 900;
+}
+
 p,
 li {
   font-family: "Fira Sans", sans-serif;
   color: rgba(0, 0, 0, 0.6);
-  font-size: 0.875;
+  font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.8rem;
 }
 
 .white-text {
   color: #fff;
+}
+
+.blue-bg {
+  background-color: #c7ddea;
 }
 
 .yellow-bg {
@@ -103,6 +114,7 @@ button {
   border: 0;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
 
+  color: rgba(0, 0, 0, 0.8);
   font-size: 0.625rem;
   font-weight: 600;
 }
@@ -115,13 +127,13 @@ article {
 article.sell {
   background-color: #a9a19e;
   padding: 7rem 5rem 0 6rem;
-  height: 34rem;
+  height: 28rem;
 }
 
 article.about {
   /* background-color: #a9a19e; */
   padding: 7rem 5rem 0 6rem;
-  height: 38rem;
+  height: 32rem;
 }
 
 .learn-more {
@@ -186,8 +198,55 @@ li.chosen {
   align-items: center;
 }
 
-.card-container > * {
-  width: 9rem;
-  height: 12rem;
-  background-color: aqua;
+.card {
+  background-color: white;
+  width: 15.938rem;
+  height: 19.375rem;
+  border-radius: 5px;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card > * {
+  flex-grow: 0;
+  /* flex; */
+}
+
+.card-img {
+  margin-top: -2rem;
+  border-radius: 5px;
+  height: 9.5rem;
+  width: 90%;
+  /* aspect-ratio: 16/16; */
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+}
+
+.card-img img {
+  margin-top: 0.8rem;
+  height: 108%;
+  /* overflow: hidden; */
+  /* aspect-ratio: 1/1; */
+}
+
+.card:nth-of-type(2) .card-img img {
+  height: 285%;
+}
+
+.card:nth-of-type(3) .card-img img {
+  height: 260%;
+}
+
+.card-text {
+  margin: 0 1.4rem;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.7rem;
+  font-weight: 900;
+  line-height: 1.5em;
+  text-align: center;
 }
