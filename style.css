@@ -2,9 +2,9 @@
 @import url("https://unpkg.com/css.gg@2.0.0/icons/css/chevron-up.css");
 
 /* IMPORT FONTS  */
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600&family=Frank+Ruhl+Libre:wght@700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600;700;800&family=Frank+Ruhl+Libre:wght@700;800;900&display=swap");
 
-/* Restet margins */
+/* Reset margins */
 
 * {
   box-sizing: border-box;
@@ -12,14 +12,13 @@
   padding: 0;
 }
 
-/* Set up layout */
+/* || Set up layout || */
 .wrapper {
   margin: 0 auto;
   max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: minmax(3rem, auto);
-  /* gap: 1rem; */
 }
 
 .full-width {
@@ -50,15 +49,7 @@
   grid-row: 5/7;
 }
 
-/* .grid-card-btm-bg {
-  grid-row: 6/7;
-}
-
-.grid-card-top-bg {
-  grid-row: 5/6;
-} */
-
-/* Basic styling fonts */
+/* || Basic styling fonts || */
 
 h1 {
   font-family: "Frank Ruhl Libre", serif;
@@ -83,7 +74,8 @@ h4 {
 }
 
 p,
-li {
+li,
+a {
   font-family: "Fira Sans", sans-serif;
   color: rgba(0, 0, 0, 0.6);
   font-size: 0.875rem;
@@ -91,7 +83,11 @@ li {
   line-height: 1.8rem;
 }
 
-/* Colors */
+a {
+  text-decoration: none;
+}
+
+/* || Colors || */
 
 .white-text {
   color: #fff;
@@ -125,7 +121,7 @@ li {
   background-color: #777574;
 }
 
-/* Style for main content */
+/* || Style for main content || */
 
 header {
   grid-row: 1/3;
@@ -138,8 +134,12 @@ header {
   background-position: 96% bottom;
   background-size: 17rem;
 
-  height: 34rem;
+  min-height: 34rem;
   padding: 4rem 6rem 4rem 6rem;
+}
+
+header p {
+  margin-right: 3rem;
 }
 
 /* aside styling */
@@ -175,27 +175,30 @@ nav li {
   font-size: 0.75rem;
   margin: 0 3.5rem;
 }
+nav a {
+  color: rgba(0, 0, 0, 0.4);
+}
 
-li.chosen {
+li.chosen a {
   color: #000;
 }
 
 /* Sell article styling */
 
 article {
-  /* background-color: #a9a19e; */
-  padding: 7rem 5rem 0 6rem;
+  padding: 7rem 5rem 3rem 6rem;
 }
 
-article.sell {
-  height: 28rem;
+article p {
+  line-height: 1.5rem;
+  margin-right: 2.5rem;
 }
 
 /* Card container position and style */
 
 .card-container {
   display: flex;
-  gap: 5rem;
+  gap: 1.7rem;
   justify-content: center;
   align-items: center;
 }
@@ -241,9 +244,8 @@ article.sell {
 }
 
 article.about {
-  /* background-color: #a9a19e; */
   padding: 7rem 5rem 0 6rem;
-  height: 32rem;
+  min-height: 32rem;
 }
 
 /*styling and positioning for h1 "about us" tag in yellow middle part of page*/
@@ -300,7 +302,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 0.5rem;
+  padding-top: 0.8rem;
 }
 
 /*Styling for the footer text*/
@@ -308,27 +310,29 @@ footer p {
   font-family: "Fira Sans", sans-serif;
   font-size: 17px;
   padding: 0 0 0.5rem 0;
-  margin-top: -0.5rem;
+  margin-top: -0.9rem;
+  margin-bottom: 0.7rem;
 }
 
 /*Dark grey spot in footer*/
 .bottom-footer {
-  height: 10rem;
+  height: 21.5rem;
   width: 100%;
 }
 
-/* Reuse */
+/* || Reusable items || */
 
 button {
   margin: 4rem 0;
-  padding: 1rem 2.8rem;
+  padding: 0.9rem 2.5rem;
   border-radius: 30px;
   border: 0;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
 
   color: rgba(0, 0, 0, 0.8);
+  font-family: "Fira sans", sans-serif;
   font-size: 0.625rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /*Up arrow style*/
