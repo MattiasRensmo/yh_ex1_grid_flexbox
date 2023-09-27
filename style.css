@@ -335,6 +335,11 @@ button {
   font-weight: 700;
 }
 
+button:active {
+  box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
+}
+
 /*Up arrow style*/
 .gg-chevron-up::after {
   width: 15px;
